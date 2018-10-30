@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> L4 - collage</title>
+
+	<style type="text/css">
+		* { 
+			box-sizing: border-box;
+		 }
+		body { 
+			background: white;
+		 }
+
+		 body{
+		 	padding: 0;
+		 	margin: 0;
+		 }
+
+		 .container {
+		 	background: white;
+		 	min-height: 100vh;
+		 	display: grid;
+		 	grid-template-columns: 1fr 1fr;
+		 	grid-template-rows: 1fr 1fr 1fr 1fr;
+		 	grid-template-areas:
+		 		"p1 p2"
+		 		"p1 p3"
+		 		"p4 p4"
+		 		"p5 p5";
+		 	grid-gap: 10px;
+		 	padding: 10px;
+		 }
+
+		 .item {
+		 	background: blue;
+		 	min-height: 100px;
+		 	min-width: 100px;
+		 }
+
+		 #photo1 {
+		 	grid-area:p1;
+		 	background: url(http://www.1zoom.net/big/42/62858-Nika.jpg);
+		 	background-size: cover;
+		 	background-position: center;
+		 }
+
+		  #photo2 {
+		 	grid-area:p2;
+		 	background: url(https://key.photoion.co.uk/wp-content/uploads/2015/06/flower-photography-tips.jpg);
+		 	background-size: cover;
+		 	background-position: center;
+		 }
+
+		  #photo3 {
+		 	grid-area:p3;
+		 	background: url(http://greengate.ca/images/gardensense/fall-prep/Rose-Daphne.jpg);
+		 	background-size: cover;
+		 	background-position: center;
+		 }
+
+		  #photo4 {
+		 	grid-area:p4;
+		 	background: url(https://farm5.static.flickr.com/4060/4508902754_17bbae35e2_b.jpg);
+		 	background-size: cover;
+		 	background-position: center;
+		 }
+
+		   #photo5 {
+		 	grid-area:p5;
+		 	background: url(https://img00.deviantart.net/db5d/i/2012/223/8/3/macro_panorama_chrysanten_flowers_by_basvdheuvel-d5aonx2.jpg);
+		 	background-size: cover;
+		 	background-position: center;
+		 }
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item" id="photo1">
+		</div>
+
+		<div class="item" id="photo2">
+		</div>
+
+		<div class="item" id="photo3">
+		</div>
+
+		<div class="item" id="photo4">
+		</div>
+
+		<div class="item" id="photo5">
+		</div>
+	</div>	
+</body>
+</html>
